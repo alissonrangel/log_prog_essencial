@@ -2,11 +2,18 @@ programa
 {
 	funcao inicio()
 	{
-		inteiro contador,limite,valor,resultado
-		contador = 0
-		limite = 10
-		valor = 1
-
+		inteiro contador,limite,resultado,tabuada
+		contador = 0		
+		escreva("Digite o valor do número que você quer saber a tabuada: ")
+		leia(tabuada)
+		escreva("Qual é o limite: ")
+		leia(limite)
+		faca{
+			resultado = tabuada*contador
+			escreva("\n"+tabuada+" x "+contador+" = "+resultado)
+			contador++
+		}enquanto(contador<=limite)
+		/*
 		faca{
 			faca{
 				escreva("\n"+valor+" x "+contador+" = "+(valor*contador))
@@ -15,6 +22,7 @@ programa
 			valor++
 			contador = 0
 		}enquanto(valor<=10)
+		*/
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 243; 
+ * @POSICAO-CURSOR = 74; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
