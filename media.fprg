@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Alisson"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-15 09:38:44 "/>
+        <attribute name="created" value="QWxpc3NvbjtMVUNJQU5BLVBDOzIwMjEtMDItMTU7IjA4OjQ1OjUzICI7MjYyMw=="/>
+        <attribute name="edited" value="QWxpc3NvbjtMVUNJQU5BLVBDOzIwMjEtMDItMTU7IjA5OjM4OjQ0ICI7MjsyNzM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, total" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="total" expression="nota1+nota2+nota3+nota4"/>
+            <assign variable="media" expression="total/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parabens voce foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voce foi reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Total das notas: &quot;&amp;total&amp;&quot;- Media: &quot;&amp;media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

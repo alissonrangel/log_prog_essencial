@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Alisson"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-15 09:48:14 "/>
+        <attribute name="created" value="QWxpc3NvbjtMVUNJQU5BLVBDOzIwMjEtMDItMTU7IjA5OjM4OjQ3ICI7MjYyOQ=="/>
+        <attribute name="edited" value="QWxpc3NvbjtMVUNJQU5BLVBDOzIwMjEtMDItMTU7IjA5OjQ4OjE0ICI7MTsyNzMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jan, fev, mar, abr, total, media" type="Real" array="False" size=""/>
+            <declare name="nomeVendedor" type="String" array="False" size=""/>
+            <input variable="nomeVendedor"/>
+            <input variable="jan"/>
+            <input variable="fev"/>
+            <input variable="mar"/>
+            <input variable="abr"/>
+            <assign variable="total" expression="jan+fev+mar+abr"/>
+            <assign variable="media" expression="total/4"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="nomeVendedor&amp;&quot;, recebeu um abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nomeVendedor&amp;&quot;, recebeu um abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
